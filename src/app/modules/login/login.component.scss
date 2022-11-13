@@ -1,3 +1,56 @@
-p {
-    color: red
+.loginBG{
+    background-image: url("../../../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
 }
+.centerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//header card
+.card {
+    top: 25%;
+    @media only screen and (max-width: 550px){
+        width: 360px
+    }
+    width: 560px;
+    padding-top: 40px;
+    .card__displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px; 
+    }
+    .card__title {
+        font-size: medium;
+    }
+    .card__sub{
+        font-size:smaller
+    }  
+} 
+//form
+.form{
+    padding-left: 20px;
+    @media only screen and (max-width: 550px){
+        width: 360px
+    }
+    width: 500px;
+    .form__input{
+        width: 100%;
+        display: flex;
+        p{
+            
+            padding-top: 16px;
+        }
+        .form__field{
+           width: 400px;
+        }
+
+    }
+    .form__submit{
+        width: 100%;
+    }
+}
+

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginRoutingModule } from './login.routing';
-import { LoginComponent } from './login.component';
+import { homeRoutingModule } from './home.routing';
+import { homeComponent } from './home.component';
 import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 //Material
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -13,14 +15,15 @@ import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
-    LoginComponent
+    homeComponent
   ],
   imports: [
     CommonModule,
-    LoginRoutingModule,
+    homeRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     MatSidenavModule,
+    MatToolbarModule,
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
@@ -28,4 +31,4 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule
   ]
 })
-export class LoginModule { }
+export class HomeModule { }
