@@ -1,12 +1,12 @@
-{
-   "employes": [{
+[
+  {
     "id": 1,
     "first_name": "Colly",
     "last_name": "Heers",
     "email": "cheers0@jalbum.net",
     "phone": "+86 282 742 1939",
     "rol": "Account Representative II",
-    "avatar": "https://robohash.org/autemdolorespariatur.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/autemdolorespariatur.png?size=70x70&set=set1"
   }, {
     "id": 2,
     "first_name": "Morganica",
@@ -14,7 +14,7 @@
     "email": "mcattemull1@desdev.cn",
     "phone": "+86 682 274 1550",
     "rol": "Nurse Practicioner",
-    "avatar": "https://robohash.org/distinctioperferendisvoluptatem.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/distinctioperferendisvoluptatem.png?size=70x70&set=set1"
   }, {
     "id": 3,
     "first_name": "Marleah",
@@ -22,7 +22,7 @@
     "email": "mgallard2@illinois.edu",
     "phone": "+509 634 279 8560",
     "rol": "Product Engineer",
-    "avatar": "https://robohash.org/autconsequaturarchitecto.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/autconsequaturarchitecto.png?size=70x70&set=set1"
   }, {
     "id": 4,
     "first_name": "Roxana",
@@ -30,7 +30,7 @@
     "email": "rwilcock3@amazon.co.jp",
     "phone": "+86 889 962 6406",
     "rol": "Engineer II",
-    "avatar": "https://robohash.org/pariaturvoluptateset.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/pariaturvoluptateset.png?size=70x70&set=set1"
   }, {
     "id": 5,
     "first_name": "Petronia",
@@ -38,7 +38,7 @@
     "email": "pbarsby4@sciencedaily.com",
     "phone": "+62 155 590 4860",
     "rol": "Cost Accountant",
-    "avatar": "https://robohash.org/animilaboreveritatis.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/animilaboreveritatis.png?size=70x70&set=set1"
   }, {
     "id": 6,
     "first_name": "Lothaire",
@@ -46,7 +46,7 @@
     "email": "lwein5@newyorker.com",
     "phone": "+351 800 662 8904",
     "rol": "Executive Secretary",
-    "avatar": "https://robohash.org/liberoaliquidvoluptatem.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/liberoaliquidvoluptatem.png?size=70x70&set=set1"
   }, {
     "id": 7,
     "first_name": "Eunice",
@@ -54,7 +54,7 @@
     "email": "evassman6@dagondesign.com",
     "phone": "+389 667 132 1266",
     "rol": "General Manager",
-    "avatar": "https://robohash.org/ducimusiustoquidem.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/ducimusiustoquidem.png?size=70x70&set=set1"
   }, {
     "id": 8,
     "first_name": "Travis",
@@ -62,7 +62,7 @@
     "email": "tsauter7@goo.ne.jp",
     "phone": "+62 267 308 6712",
     "rol": "Chief Design Engineer",
-    "avatar": "https://robohash.org/accusantiumconsequatursit.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/accusantiumconsequatursit.png?size=70x70&set=set1"
   }, {
     "id": 9,
     "first_name": "Ulises",
@@ -70,7 +70,7 @@
     "email": "usimanek8@skyrock.com",
     "phone": "+970 235 613 5461",
     "rol": "Civil Engineer",
-    "avatar": "https://robohash.org/iustoeaet.png?size=50x50&set=set1"
+    "avatar": "https://robohash.org/iustoeaet.png?size=70x70&set=set1"
   }, {
     "id": 10,
     "first_name": "Brice",
@@ -78,6 +78,6 @@
     "email": "bzorro9@hatena.ne.jp",
     "phone": "+86 845 812 6779",
     "rol": "Software Consultant",
-    "avatar": "https://robohash.org/quiquodenim.png?size=50x50&set=set1"
-  }]
-}
+    "avatar": "https://robohash.org/quiquodenim.png?size=70x70&set=set1"
+  }
+]

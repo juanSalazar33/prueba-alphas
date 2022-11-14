@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LoginService {
+  Key: string = 'session'
   session: boolean = false
   constructor() { }
   async tryLogin(user: string, password: string) {
@@ -15,11 +16,9 @@ export class LoginService {
     }else  this.setSession(false)
   }
   setSession(eneble: boolean) {
-    
-    this.session = eneble
+    eneble ? localStorage.setItem(this.Key,'sessionOn') : localStorage.setItem(this.Key,'sessionOf')
   }
   getSession() {
-
-    return this.session
+   return (localStorage.getItem(this.Key) === 'sessionOn') ? true : false
   }
 }

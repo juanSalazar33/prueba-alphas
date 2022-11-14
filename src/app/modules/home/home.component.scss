@@ -1,7 +1,34 @@
 .spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.button-mode {
+  margin-right: 5px;
+}
+.listEmploye {
+  padding: 10px;
+}
+.form__field{width: 100%;}
+.card {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  .card__avatar{
+    background-color: aquamarine;
+    width: 90px;
+    height: 90px;
+    text-align: center;
   }
-  
-  .button-mode{
-    margin-right: 5px;
+  .card__header{
+    padding-top: 6px;
   }
+  .employe_sub_title{
+    p{
+      margin: 0;
+      font-size: smaller;
+    }
+  }
+  .employe_title{
+    font-size: medium;
+  }
+}

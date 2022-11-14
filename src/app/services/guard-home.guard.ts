@@ -11,12 +11,11 @@ export class GuardHomeGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    console.log("check secction")
     if (this.auth.getSession()) {
       return true;
     } else {
       this.router.navigate(['/','login']).finally(()=>alert("You don't have permission to view this page"))
-      return false;
+      return true;
     }
   }
   

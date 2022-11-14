@@ -7,15 +7,17 @@ import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
-
+import {MatGridListModule} from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-
+//filter
+import { Filter } from 'src/app/pipes/filter.pipe';
 @NgModule({
   declarations: [
-    homeComponent
+    homeComponent,
+    Filter
   ],
   imports: [
     CommonModule,
@@ -25,6 +27,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatSidenavModule,
     MatToolbarModule,
     MatCardModule,
+    MatGridListModule,
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,

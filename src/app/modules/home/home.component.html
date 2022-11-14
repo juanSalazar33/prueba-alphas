@@ -9,7 +9,43 @@
       <mat-icon fontIcon="exit_to_app"></mat-icon>
     </button>
 </mat-toolbar>
-<mat-sidenav-container>
+<mat-sidenav-container class="listEmploye">
   <h2>Directorio de empleados</h2>
+  <mat-grid-list
+    [cols]="breakpoint" 
+    rowHeight="80px" 
+    (window:resize)="onResize($event)"
+  >
+    <mat-grid-tile>
+      <mat-form-field appearance="outline" class="form__field">
+        <mat-label>Buscar</mat-label>
+        <input matInput  [(ngModel)]="searchValue"/>
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile *ngIf="breakpoint == 2">
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list 
+    [cols]="breakpoint" 
+    [gutterSize]="'10px'"
+    rowHeight="115px" 
+    (window:resize)="onResize($event)"
+  >
+    <mat-grid-tile  *ngFor="let employe of employes | filter: searchValue" >
+      <mat-card class="card" >
+        <mat-card-header class="card__header">
+          <div mat-card-avatar class="card__avatar">
+            <img [src]="employe.avatar" alt="">
+          </div>
+          <mat-card-title class="employe_title">{{employe.last_name | uppercase}}, {{employe.first_name}}</mat-card-title>
+          <mat-card-subtitle class="employe_sub_title">
+            <p><b>{{employe.rol}}</b></p>
+            <p>{{employe.phone}}</p>
+            <p>{{employe.email}}</p>
+          </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
 </mat-sidenav-container>
 
