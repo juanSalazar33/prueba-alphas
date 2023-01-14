@@ -1,24 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-
-
+import { ButtonComponent } from 'src/app/UX/button';
 @Component({
   standalone: true,
   selector: 'app-header',
-  imports: [
-    MatToolbarModule, MatIconModule, MatButtonModule
-  ],
+  imports: [MatToolbarModule, ButtonComponent],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
-
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

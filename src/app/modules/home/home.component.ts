@@ -10,30 +10,33 @@ import { Employe } from 'src/app/models';
   styleUrls: ['./home.component.scss'],
 })
 export class homeComponent implements OnInit {
-  searchValue: string = ''
-  breakpoint?: number
-  employes: Employe [] = []
+  searchValue: string = '';
+  breakpoint?: number;
+  employes: Employe[] = [];
   constructor(
     private router: Router,
     private auth: LoginService,
-    private employe: EmployeeService) { 
-  
-    }
+    private employe: EmployeeService
+  ) {}
   back(): void {
-    this.auth.setSession(false)
-    this.router.navigate(['/','login'])
+    this.auth.setSession(false);
+    this.router.navigate(['/', 'login']);
   }
   ngOnInit(): void {
-    this.breakpoint = (window.innerWidth <= 500) ? 1 : 2;
-    this.employe.getAllEmploye().then(data => {
-      this.employes = data.sort(function(a, b){
-        if(a.last_name.toLowerCase() < b.last_name.toLowerCase()) { return -1; }
-        if(a.last_name.toLowerCase() > b.last_name.toLowerCase()) { return 1; }
+    this.breakpoint = window.innerWidth <= 500 ? 1 : 2;
+    this.employe.getAllEmploye().then((data) => {
+      this.employes = data.sort(function (a, b) {
+        if (a.last_name.toLowerCase() < b.last_name.toLowerCase()) {
+          return -1;
+        }
+        if (a.last_name.toLowerCase() > b.last_name.toLowerCase()) {
+          return 1;
+        }
         return 0;
-      })
+      });
     });
   }
   onResize(event: any) {
-    this.breakpoint = (event.target.innerWidth <= 500) ? 1 : 2
+    this.breakpoint = event.target.innerWidth <= 500 ? 1 : 2;
   }
 }

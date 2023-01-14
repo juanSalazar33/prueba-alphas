@@ -10,8 +10,10 @@ import { MatCardModule } from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+//Ux
+import { HeaderComponent } from 'src/app/UX/header';
+import { ButtonComponent } from 'src/app/UX/button';
 //filter
 import { Filter } from 'src/app/pipes/filter.pipe';
 @NgModule({
@@ -24,13 +26,14 @@ import { Filter } from 'src/app/pipes/filter.pipe';
     homeRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HeaderComponent,
+    ButtonComponent,
     MatSidenavModule,
     MatToolbarModule,
     MatCardModule,
     MatGridListModule,
     MatInputModule,
     MatFormFieldModule,
-    MatIconModule,
     MatButtonModule
   ]
 })
