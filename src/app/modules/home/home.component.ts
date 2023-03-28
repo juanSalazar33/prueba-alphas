@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { LoginService } from 'src/app/services/login.service';
 import { EmployeeService } from 'src/app/services/employee.service';
 import { Employe } from 'src/app/models';
 
@@ -14,14 +12,8 @@ export class homeComponent implements OnInit {
   breakpoint?: number;
   employes: Employe[] = [];
   constructor(
-    private router: Router,
-    private auth: LoginService,
     private employe: EmployeeService
   ) {}
-  back(): void {
-    this.auth.setSession(false);
-    this.router.navigate(['/', 'login']);
-  }
   ngOnInit(): void {
     this.breakpoint = window.innerWidth <= 500 ? 1 : 2;
     this.employe.getAllEmploye().then((data) => {

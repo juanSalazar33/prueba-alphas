@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   standalone: true,
@@ -12,8 +14,14 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ButtonComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(
+    private router: Router,
+    private auth: LoginService,
+  ) { }
+  back(): void {
+    this.auth.setSession(false);
+    this.router.navigate(['/', 'login']);
+  }
   ngOnInit(): void {
   }
 
